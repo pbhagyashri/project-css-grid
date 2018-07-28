@@ -1,0 +1,33 @@
+.one, .five, .eight, .twelve {
+	background-color: #afd275;
+}
+
+.two, .six, .nine {
+	background-color: #e7717d;
+}
+
+.three, .six, .ten {
+	background-color: #c2b9b0;
+}
+
+.four, .seven, .eleven {
+	background-color: #7e685a;
+}
+
+.complex-container {
+	display: -ms-grid;
+	display: grid;
+	
+	grid-gap: 5px;
+	
+	-ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+	
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	
+	-ms-grid-rows: (100px)[2];
+	
+	grid-template-rows: repeat(2, 100px);
+	
+	
+}
+
